@@ -1,0 +1,13 @@
+//动画 呼吸
+@mixin breathing(
+  $duration: 4s
+){
+  animation: breathing $duration infinite;
+}
+
+@keyframes breathing {
+  0%{ opacity: 0; }
+  50%{ opacity: 1; }
+  100%{ opacity: 0; }
+
+}

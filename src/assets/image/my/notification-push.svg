@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>noti setting/icon/push</title>
+    <desc>Created with Sketch.</desc>
+    <g id="noti-setting/icon/push" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <rect id="Rectangle-6" stroke="#E5E5E5" stroke-width="2" x="7" y="36" width="34" height="6" rx="3"></rect>
+        <path d="M29,19 L37.1894877,19 C38.2940572,19 39.1894877,19.8954305 39.1894877,21 C39.1894877,21.6297828 38.8928481,22.2227795 38.3888779,22.6004572 L26.2433905,31.7023425 C24.8216652,32.7677901 22.8675546,32.76779 21.4458295,31.7023422 L9.30034537,22.6004571 C8.41643734,21.9380521 8.23687366,20.6845177 8.89927866,19.8006097 C9.27695633,19.2966395 9.86995296,19 10.4997357,19 L19,19 L19,9 C19,6.790861 20.790861,5 23,5 L25,5 C27.209139,5 29,6.790861 29,9 L29,19 Z" id="Combined-Shape" stroke="#E5E5E5" stroke-width="2"></path>
+    </g>
+</svg>

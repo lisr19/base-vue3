@@ -1,0 +1,10 @@
+[submodule "src/gitsubmodule/tablePage"]
+	path = src/gitsubmodule/tablePage
+	url = git@192.168.1.130:easyCode/zkzc-table-page.git
+	branch = vue3
+
+[submodule "src/gitsubmodule/zkzc-charts"]
+	path = src/gitsubmodule/zkzc-charts
+	url = git@192.168.1.130:easyCode/zkzc-charts.git
+	branch = master
+

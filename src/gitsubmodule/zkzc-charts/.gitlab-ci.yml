@@ -1,0 +1,44 @@
+variables:
+  DINGTALK_HOOK: "https://oapi.dingtalk.com/robot/send?access_token=774ff1e1870c60eb958ee3a2dfc569cf95844366cfd98e447d3fa435c0de276d"
+  LOCAL_BUILD_SUCCESS: '{"msgtype":"text", "text":{"content":"zkzc-charts 测试环境构建完成。 \n $CI_COMMIT_MESSAGE"}}'
+  PROD_BUILD_SUCCESS:  '{"msgtype":"text", "text":{"content":"zkzc-charts 生产环境构建完成。 \n $CI_COMMIT_MESSAGE"}}'
+
+stages:
+    - build
+    - deploy
+
+prepare:
+    stage: build
+    only:
+     - master
+     - island
+    tags:
+     - master
+    script:
+     - export NODE_OPTIONS=--max_old_space_size=4096
+     - npm i
+     - npm run build
+     - npm run api:prod
+#修改镜像名称
+     - remoteTagName="192.168.1.124:5000/zkzc-charts:$CI_COMMIT_SHA"
+#修改镜像名称
+     - latestTag="192.168.1.124:5000/zkzc-charts:latest"
+     - docker build -f Dockerfile -t $remoteTagName -t $latestTag .
+     - docker push $remoteTagName
+     - docker push $latestTag
+     - docker rmi $remoteTagName
+    after_script:
+      - 'curl -H "Content-type: application/json"  -d "$LOCAL_BUILD_SUCCESS" "$DINGTALK_HOOK"'
+
+
+deploy_k8s_doc:
+  stage: deploy
+  when: on_success
+  only:
+    - master
+    - island
+  tags:
+    - master
+  script:
+    - K8SCONFIGPATH=$(initK8sConfig  "$KUBE_CONFIG"  $HOME/.kube)
+    - updateImage  svc-zkzc-charts 192.168.1.124:5000/zkzc-charts:$CI_COMMIT_SHA lbs

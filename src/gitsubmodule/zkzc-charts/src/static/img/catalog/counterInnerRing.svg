@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 10</title>
+    <defs>
+        <circle id="path-1" cx="15.5" cy="37.5" r="1.5"></circle>
+        <filter x="-200.0%" y="-200.0%" width="500.0%" height="500.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.266666667   0 0 0 0 0.368627451  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="灯杆云数据展示中心" transform="translate(-554.000000, -154.000000)">
+            <g id="图表-左" transform="translate(0.000000, 72.000000)">
+                <g id="编组-29" transform="translate(30.000000, 32.000000)">
+                    <g id="编组-6" transform="translate(317.000000, 50.000000)">
+                        <g id="编组-10" transform="translate(207.000000, 0.000000)">
+                            <g id="椭圆形">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill="#FF445E" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                            <path d="M22,4 C31.9411255,4 40,12.0588745 40,22 C40,31.8306685 32.1192167,39.8206815 22.3306652,39.9970237 L22,40 L22,38 C30.836556,38 38,30.836556 38,22 C38,13.163444 30.836556,6 22,6 C13.163444,6 6,13.163444 6,22 C6,26.25979 7.67153514,30.2511217 10.5937805,33.2204877 L10.8804687,33.5046301 L9.49036665,34.942551 C6.00513164,31.5732193 4,26.9450035 4,22 C4,12.0588745 12.0588745,4 22,4 Z" id="椭圆形" fill="#33AEE6" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

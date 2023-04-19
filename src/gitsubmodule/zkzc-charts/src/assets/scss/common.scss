@@ -1,0 +1,38 @@
+.carousel__arrow{
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 50%;
+  background-color: rgba(31,45,61,.11);
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 12px;
+
+  &::after{
+    font-size: initial;
+  }
+}
+
+// counterIndex文字颜色
+.counter .number-item-title, .counter .number-item-val {
+  color: rgb(255, 255, 255)!important;
+}
+
+
+
+.stripe .linear-base-bar {
+  background-color: #2b3b73!important;
+}
+
+.catalog .count-text .count-number,.count-name, .stripe .device-item, .stripe .device-number {
+  color: #fff!important;
+}

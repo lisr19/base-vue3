@@ -1,0 +1,62 @@
+[
+  {
+    "label": "index",
+    "src": "bar/index",
+    "title": "柱状图/扁平柱状图（默认）"
+  },
+  {
+    "label": "cube",
+    "src": "bar/cube",
+    "title": "柱状图/方柱"
+  },
+  {
+    "label": "column",
+    "src": "bar/column",
+    "title": "柱状图/圆柱"
+  },
+  {
+    "label": "index",
+    "src": "pie/index",
+    "title": "饼图/环状饼图（默认）"
+  },
+  {
+    "label": "solid",
+    "src": "pie/solid",
+    "title": "饼图/3D饼图"
+  },
+  {
+    "label": "index",
+    "src": "line/index",
+    "title": "线图/折线图（默认)"
+  },
+  {
+    "label": "area",
+    "src": "line/area",
+    "title": "线图/面积图"
+  },
+  {
+    "label": "index",
+    "src": "counter/index",
+    "title": "计数器/条状计数器（默认）"
+  },
+  {
+    "label": "catalog",
+    "src": "counter/catalog",
+    "title": "计数器/图标计数器"
+  },
+  {
+    "label": "pattern",
+    "src": "pattern/index",
+    "title": "条纹图/横向条纹图（默认）"
+  },
+  {
+    "label": "index",
+    "src": "meter/index",
+    "title": "数字表盘/常规数字表盘（默认）"
+  },
+  {
+    "label": "ring",
+    "src": "meter/ring",
+    "title": "数字表盘/环状数字表盘"
+  }
+]

@@ -1,0 +1,292 @@
+
+
+// element-puls样式修改
+// 覆盖按钮颜色
+.el-button.is-link {
+    color:$theme-color
+}
+
+
+.el-table--large .el-table__cell{
+    padding: 0 !important;
+}
+.searchFilter .el-input,.el-button{
+  height: 36px;
+  line-height: 36px;
+}
+
+.el-button--small{
+  padding: 10px 22px;
+}
+.el-table__header-wrapper,
+.el-table__header {
+  height: 44px;
+  line-height: 44px;
+  padding: 0px;
+}
+.el-button > span{
+  line-height: 1;
+}
+/* 覆盖表格选择框样式 */
+.table .el-checkbox__input.is-checked .el-checkbox__inner {
+    background-color: $theme-color!important;
+    border-color: $theme-color!important;
+}
+.table .el-table .el-table__cell{
+  padding: 3px 0;
+}
+/* 覆盖分页器样式 */
+.pagination {
+    margin-top: 0 !important;
+    padding: 15px 0;
+}
+.el-pagination .el-input .el-input__inner{
+  height: 36px;
+  line-height: 36px;
+  padding-right: 20px;
+}
+.el-pagination.is-background .btn-next.is-active, .el-pagination.is-background .btn-prev.is-active, .el-pagination.is-background .el-pager li.is-active {
+    background-color: transparent !important;
+    border: 1px solid $theme-color;
+    color: $theme-color !important;
+}
+.pagination .el-pagination .btn-next, .pagination .el-pagination .btn-prev, .pagination .el-pagination .el-pager li {
+    height: 36px;
+    line-height: 36px;
+    min-width: 36px;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 0 10px;
+    background-color: #fff !important;
+}
+
+.el-input--large {
+  --el-input-height: var(--el-component-size-large);
+  font-size: 14px;
+  margin-right: 4px;
+  height: 44px;
+  line-height: 44px;
+}
+// 侧边菜单导航栏
+.el-aside {
+  background-color: var(--el-aside-bg-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--el-transition-duration);
+
+  &-title {
+    margin: 2px 0;
+    text-align: center;
+    color: var(--el-aside-text-color);
+    cursor: pointer;
+  }
+
+  .el-scrollbar {
+    flex: 1;
+    height: 0;
+  }
+}
+.el-dialog .el-dialog__body{
+  padding: 24px;
+}
+.el-menu {
+  --el-menu-bg-color: #314153;
+  --el-menu-text-color: #bfcbd9;
+  --el-menu-hover-bg-color: rgba(255, 255, 255, 0.1);
+  --el-menu-hover-text-color: #314153;
+  --el-menu-active-text-color: #263243;
+}
+.el-breadcrumb{
+  --el-breadcrumb-bg-color: #fff;
+}
+
+.el-button--primary{
+  color: #fff;
+  background-color: $theme-color;
+  border-color: $theme-color;
+}
+.el-button--primary:focus,
+.el-button--primary:hover {
+  background: $theme-color;
+  border-color:$theme-color;
+  color: #fff;
+}
+.el-button--primary.is-active,
+.el-button--primary:active {
+  background: $theme-color;
+  border-color: $theme-color;
+  color: #fff;
+}
+
+.el-input__wrapper{
+  padding: 0 11px;
+}
+.el-input__wrapper.is-focus {
+  box-shadow: 0 0 0 1px $theme-color inset!important;
+}
+.main-logbox .el-input__wrapper.is-focus {
+  background-color: hsla(0,0%,100%,.4)!important;
+  box-shadow: 0 0 0 0!important;
+}
+.el-button--text{
+  color: $theme-color;
+}
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: $theme-color;
+    border-color: $theme-color;
+    --el-button-hover-border-color:$theme-color !important;
+}
+.el-date-table td.today .el-date-table-cell__text{
+  color: $theme-color!important;
+}
+.el-date-table td.current:not(.disabled) .el-date-table-cell__text{
+  background-color: $theme-color!important;
+  color: #fff!important;
+}
+
+.el-select-dropdown__item.selected{
+  color: $theme-color!important;
+}
+.el-button{
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.el-form .el-input--default{
+  height: 36px;
+  line-height: 36px;
+}
+.el-input__inner{
+  padding: 0 8px;
+}
+.el-input--suffix .el-input__inner {
+  padding-right: 30px;
+  height: 36px;
+}
+
+.el-button--primary.is-link, .el-button--primary.is-plain, .el-button--primary.is-text{
+    --el-button-hover-bg-color:$theme-color
+}
+
+.el-form-item--small .el-form-item__label {
+    text-align: right;
+    vertical-align: middle;
+    float: left;
+    font-size: 14px;
+    color: #777;
+    line-height: 40px;
+    padding: 0 12px 0 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.el-button--primary.is-plain {
+    color: $theme-color;
+    background: none;
+    border-color: $theme-color;
+}
+
+.el-dialog__footer {
+    border-top: 1px solid #dee0e7;
+}
+
+.el-radio__input.is-checked .el-radio__inner{
+    border-color: $theme-color  !important;
+    background: $theme-color !important;
+}
+
+.el-radio.el-radio--small .el-radio__label {
+    font-size: 14px !important;
+}
+
+.el-radio__input.is-checked+.el-radio__label {
+    color: $theme-color!important;
+}
+
+.el-input--small .el-input__wrapper {
+  height: 36px;
+  line-height: 36px;
+}
+
+.el-form-item__content {
+    display: block !important;
+}
+
+.el-radio-group {
+    line-height: 38px !important;
+    height: 38px !important;
+}
+
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: $theme-color !important;
+    border-color: $theme-color !important;
+}
+
+
+.el-range-editor--small.el-input__wrapper {
+    height: 100% !important;
+}
+
+.el-date-editor .el-range-input{
+    color: #0c1014 !important;
+    font-size: 13px !important;
+}
+
+.el-dialog__header {
+    padding: 16px 24px !important;
+    border-bottom: 1px solid #dee0e7;
+    position: relative;
+    margin-right: 0 !important;
+}
+
+.el-dialog__title {
+    line-height: 24px !important;
+    font-size: 16px !important;
+    color: #0c1014 !important;
+}
+
+.el-dialog__header:before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 24px;
+    background-image: linear-gradient(180deg, #ff445e, #ff445e 30%, $theme-color 0, $theme-color);
+    position: absolute;
+    left: 0
+}
+
+.table-page .content {
+    margin: 24px;
+}
+//pagination
+.table-page .pagination .jumper .input .el-input__wrapper{
+  padding: 0!important;
+  margin-right: 5px;
+}
+.table-page .pagination .jumper .input .el-input__wrapper .el-input__inner{
+  text-align: center;
+}
+.table-page .pagination .el-pagination{
+  text-align: right;
+}
+.table-page input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.table-page input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.table-page .pagination .jumper .input input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.area-main .table-page .content{
+  padding: 0;
+}
+.el-form-item {
+  display: flex;
+  align-items: center;
+}
+

@@ -1,0 +1,28 @@
+{
+  "name": "zkzc-table-page",
+  "version": "v2.0.007",
+  "description": "格式化表格页面",
+  "homepage": "test",
+  "repository": {
+    "type": "git",
+    "url": "http://192.168.1.130/npmproject/zkzc-table-page"
+  },
+  "main": "./TablePage/TablePage.vue",
+  "scripts": {
+    "package": "vue-cli-service build --target lib --name tablePage ./index.js"
+  },
+  "author": "huangguangcong",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2"
+  },
+  "dependencies": {
+    "element-ui": "^2.15.3",
+    "vue": "^2.6.12",
+    "vue-ele-form": "^0.8.56"
+  },
+  "files": [
+    "TablePage/*"
+  ]
+}

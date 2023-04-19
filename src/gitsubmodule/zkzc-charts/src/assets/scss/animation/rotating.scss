@@ -1,0 +1,11 @@
+//动画 旋转
+@mixin rotating(
+  $duration: 10s
+){
+  animation: rotating $duration linear infinite;
+}
+
+@keyframes rotating {
+  0%{ transform: rotateZ(0deg); }
+  100%{ transform: rotateZ(360deg); }
+}

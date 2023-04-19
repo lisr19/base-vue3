@@ -1,0 +1,78 @@
+.area{
+  display: flex;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  
+.area-sub{
+  // position: absolute;
+  top: 0;
+  left: 0;
+  bottom:0;
+  width:250px;
+  border-right:1px solid #ddd;
+  padding: 8px;
+  height: 100%;
+  overflow: auto;
+  flex-shrink: 0;
+  .area-sub-filter{
+    padding:8px;
+  }
+  .area-sub-box{
+    position: absolute;
+    top:50px;
+    left:8px;
+    right:8px;
+    bottom:8px;
+    overflow: auto;
+  }
+}
+.area-main{
+  margin: 10px 20px ;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  // &.flex2{ margin-left: 270px}
+  display: flex;
+  flex-direction: column;
+  .area-table{
+    height: 100%;
+    overflow: auto;
+  }
+
+  .area-main-head{
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+    overflow: hidden;
+    padding: 10px 4px;
+
+    h4{
+      font-size: 1.2rem;;
+      display: inline-block;
+    }
+    .btn{
+      position: absolute;
+      top:4px;
+      right:0;
+    }
+  }
+  .area-main-box{
+    padding:10px 0;
+    .group-info{
+      margin: 10px 0px ;
+    }
+    .toolbar{
+      padding: 0 0 10px;
+    }
+  }
+  .area-main-filter{
+    margin-bottom: 10px;
+    padding:10px;
+    background-color: #f7f7f7;
+    .el-form-item{
+      margin-bottom: 0;
+    }
+  }
+}
+}

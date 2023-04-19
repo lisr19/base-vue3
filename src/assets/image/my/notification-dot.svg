@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>noti setting/icon/dot</title>
+    <desc>Created with Sketch.</desc>
+    <g id="noti-setting/icon/dot" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <circle id="Oval-2" stroke="#E5E5E5" stroke-width="2" cx="40" cy="8" r="5"></circle>
+        <path d="M40,20.5263158 L40,38.4210526 C40,40.3976507 38.3976507,42 36.4210526,42 L9.57894737,42 C7.60234932,42 6,40.3976507 6,38.4210526 L6,11.5789474 C6,9.60234932 7.60234932,8 9.57894737,8 L27.4736842,8" id="Rectangle-Copy" stroke="#E5E5E5" stroke-width="2"></path>
+    </g>
+</svg>

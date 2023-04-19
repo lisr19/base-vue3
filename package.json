@@ -1,0 +1,47 @@
+{
+  "name": "my-vue-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.0.10",
+    "@zkzc/fe-utils": "0.0.17",
+    "axios": "^0.19.0",
+    "default-passive-events": "^2.0.0",
+    "element-plus": "^2.2.28",
+    "js-cookie": "^3.0.1",
+    "jsencrypt": "^3.3.1",
+    "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.0.29",
+    "swiper": "^5.4.5",
+    "ts-loader": "^9.4.2",
+    "vue": "^3.2.45",
+    "vue-grid-layout": "^3.0.0-beta1",
+    "vue-router": "^4.1.6",
+    "vue3-count-to": "^1.0.11"
+  },
+  "devDependencies": {
+    "@types/activex-excel": "^14.0.6",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "babel-plugin-component": "^1.1.1",
+    "echarts": "^5.3.3",
+    "echarts-gl": "^2.0.9",
+    "moment": "^2.29.1",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "typescript": "^4.9.3",
+    "unplugin-auto-import": "^0.13.0",
+    "unplugin-icons": "^0.15.2",
+    "unplugin-vue-components": "^0.23.0",
+    "vite": "^4.0.0",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-mock": "^2.9.6",
+    "vite-plugin-svg-icons": "^2.0.1"
+  }
+}

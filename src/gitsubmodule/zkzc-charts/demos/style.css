@@ -1,0 +1,16 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  background: #201e1e;
+  height: 100%;
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+#container {
+  margin: 2em;
+  width: 600px;
+  min-height: 330px;
+  background-color: #000;
+}

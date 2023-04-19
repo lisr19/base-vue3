@@ -1,0 +1,556 @@
+@import "./layui/css/layui.css";
+@import './icon.scss';
+@import "elementPuls.scss";
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+$r-b-background-color: linear-gradient(
+  to right,
+  $height-light-color,
+  $height-light-color 24px,
+  $theme-color 24px,
+  $theme-color
+);
+$r-b-background-color-V: linear-gradient(
+  to bottom,
+  $height-light-color,
+  $height-light-color 30%,
+  $theme-color 30%,
+  $theme-color
+);
+
+
+* {
+  font-family: '微软雅黑';
+}
+.theme-color {
+  background-color: $theme-color !important;
+}
+.page-color {
+  background-color: $page-color;
+}
+.menu-bar-color {
+  background-color: $menu-bar-color;
+}
+.menu-bar-lv2-color {
+  background-color: $menu-bar-lv2-color;
+}
+
+.status-color-success {
+  background-color: $status-color-success;
+}
+.status-color-warning {
+  background-color: $status-color-warning;
+}
+.status-color-error {
+  background-color: $status-color-error;
+}
+.status-color-info {
+  background-color: $status-color-info;
+}
+
+.progress-bar-green {
+  background-color: $progress-green;
+}
+.progress-bar-red {
+  background-color: $progress-red;
+}
+
+.font-color-success {
+  color: $status-color-success;
+}
+.font-color-warning {
+  color: $status-color-warning;
+}
+.font-color-error {
+  color: $status-color-error;
+}
+.font-color-info {
+  color: $status-color-info;
+}
+
+.font-color-white {
+  color: $font-color-white !important;
+}
+.font-color-gray {
+  color: $font-color-gray !important;
+}
+.background-white {
+  background-color: $font-color-white;
+}
+.background-color-3 {
+  background-color: $background-color-3;
+}
+.background-color-4 {
+  background-color: $background-color-4;
+}
+.font-color-main {
+  color: $font-color-main !important;
+}
+.font-color-default {
+  color: $font-color-default !important;
+  &:hover {
+    color: $font-color-default-hover !important;
+  }
+}
+.input-placeholder-color {
+  color: #999EB1 !important;
+}
+.font-color-tips {
+  color: $font-color-tips !important;
+}
+.font-color-secondary {
+  color: $font-color-secondary !important;
+}
+.font-color-error {
+  color: $status-color-error !important;
+}
+.border-color-theme {
+  border-color: $theme-color;
+}
+.border-color-1 {
+  border-color: $border-color-1 !important;
+}
+.border-color-2 {
+  border-color: $border-color-2 !important;
+}
+.border-color-3 {
+  border-color: $border-color-3 !important;
+}
+.border-color-4 {
+  border-color: $border-color-4 !important;
+}
+.table-border-color {
+  border-color: $table-border-color !important;
+}
+.border-color-white {
+  border-color: $font-color-white !important;
+}
+.background-color {
+  background-color: $background-color !important;
+}
+.background-color-2 {
+  background-color: $background-color-2 !important;
+}
+
+.height-light-color {
+  background-color: $height-light-color;
+}
+
+.font-color-theme,
+.button-font-color-theme {
+  color: $theme-color;
+}
+
+.r-b-background-color {
+  background-image: $r-b-background-color;
+}
+
+.select-hover-bg-color {
+  background-color: $select-hover-bg-color;
+}
+.form_input_color {
+  color: $input-color;
+}
+
+// 特殊处理部分
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: $theme-color;
+}
+.el-picker-panel{
+  z-index: 6000 !important;
+}
+
+// 滚动条
+.scroller::-webkit-scrollbar {
+  width: 7px;
+  height: 5px;
+  background-color: transparent;
+}
+.scroller::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.scroller::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: $border-color-1;
+  box-shadow: inset 0 0 5px $border-color-2;
+}
+.scroller::-webkit-scrollbar-button {
+  height: 0;
+}
+
+// ::-webkit-scrollbar {
+//   width: 7px;
+//   height: 5px;
+//   background-color: transparent;
+// }
+// ::-webkit-scrollbar-track {
+//   background-color: transparent;
+// }
+// ::-webkit-scrollbar-thumb {
+//   border-radius: 5px;
+//   background-color: $border-color-1;
+//   box-shadow: inset 0 0 5px $border-color-2;
+// }
+// ::-webkit-scrollbar-button {
+//   height: 0;
+// }
+
+// 顶栏
+// .header {
+//   .header-control {
+//     .user-icon {
+//       background-color: $font-color-default;
+//       border: 2px solid $font-color-default;
+//     }
+//   }
+// }
+.image-font {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2 * $margin-size;
+}
+
+// 导航栏
+.navbar {
+  .control {
+    .smallButton {
+      color: $font-color-default;
+    }
+    .smallButton:hover {
+      color: $theme-color;
+    }
+  }
+}
+// 菜单栏
+.menu-bar {
+  background-color: $menu-bar-color;
+  .menu-bar-lv1-item[select] {
+    &::before {
+      background-color: $theme-color;
+    }
+  }
+  .menu-bar-lv2 {
+    background-color: $menu-bar-lv2-color;
+  }
+  .menu-bar-lv2-item[select="true"] {
+    background-color: $theme-color;
+  }
+  .menu-bar-lv3-item[select="true"] {
+    background-color: $theme-color;
+  }
+}
+
+// table-page
+.table-page {
+  .content {
+    margin: $margin-size * 3;
+    padding: $margin-size * 3;
+    background-color: $page-color;
+    border-radius: 4px;
+  }
+
+  .table::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-image: $r-b-background-color;
+  }
+}
+
+// DIALOG表单样式
+.el-dialog {
+  margin-top: 5vh !important;
+  .ele-form-group {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-top: 8px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    .ele-form-group-icon {
+      width: 3px;
+      height: 14px;
+      margin-right: $margin-size;
+    }
+  }
+}
+
+/*tab页标题样式*/
+.tab-tilte {
+  width: 100%;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  li {
+    font-size: 16px;
+    float: left;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 15px;
+    font-weight: bold;
+    color: #666666;
+  }
+}
+.tab-tilte .active {
+  border-bottom: 2px solid #0069fe;
+  color: #0069fe;
+}
+
+/*
+  应用管理-地图监控-批量操作按钮
+*/
+.device-control-list {
+  .el-button:hover {
+    background-color: $select-hover-bg-color !important;
+  }
+}
+
+/*
+  自定义表单组件
+*/
+.el-image-viewer__wrapper {
+  z-index: 3000 !important;
+}
+.el-select-dropdown{  //选择下拉框的层级优先级最高
+  z-index: 9999 !important;
+}
+
+
+// 表格在线状态、使用状态等状态标识
+.blank_dot {
+  display: inline-block;
+  width: $dot_size;
+  height: $dot_size;
+  box-sizing: border-box;
+  border: 1px solid $status-color-info;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.gray_dot {
+  display: inline-block;
+  width: $dot_size;
+  height: $dot_size;
+  box-sizing: border-box;
+  background-color: $status-color-info;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.red_dot {
+  display: inline-block;
+  width: $dot_size;
+  height: $dot_size;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: $status-color-error;
+  vertical-align: middle;
+}
+
+.green_dot {
+  display: inline-block;
+  width: $dot_size;
+  height: $dot_size;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: $status-color-success;
+  vertical-align: middle;
+}
+
+.blue_dot {
+  display: inline-block;
+  width: $dot_size;
+  height: $dot_size;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: $theme-color;
+  vertical-align: middle;
+}
+
+.task-red_dot {
+  display: inline-block;
+  width: $dot_size;
+  height: $dot_size;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: $task-red;
+  vertical-align: middle;
+}
+
+.task-green_dot {
+  display: inline-block;
+  width: $dot_size;
+  height: $dot_size;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: $task-green;
+  vertical-align: middle;
+}
+
+.task-blue_dot {
+  display: inline-block;
+  width: $dot_size;
+  height: $dot_size;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: $task-blue;
+  vertical-align: middle;
+}
+
+.yellow_dot {
+  display: inline-block;
+  width: $dot_size;
+  height: $dot_size;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: $status-color-warning;
+  vertical-align: middle;
+}
+
+.video-tips-color {
+  background-color: $video-tips-color;
+}
+
+.viewer-container {
+  z-index: 3000 !important;
+}
+
+// 展示中心，按钮左侧红色
+.filter-button-line {
+  border-left: 2px solid $height-light-color;
+}
+
+/**
+  *elememnt样式覆盖
+**/
+//步骤条
+.is-process {
+  .el-step__icon {
+    border: none;
+    background-color: #345ef0;
+    color: #fff;
+    width: 26px;
+    height: 26px;
+  }
+  .el-step__icon.is-text {
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: #c7d3ff;
+  }
+}
+.el-step__head.is-process {
+  color: #345ef0;
+  border-color: #345ef0;
+}
+.el-step__title.is-process {
+  color: #0c1014;
+}
+
+.is-success {
+  .el-step__icon {
+    border: none;
+    background-color: #345ef0;
+    color: #fff;
+  }
+  .el-step__icon.is-text {
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: inherit;
+  }
+}
+.el-step__head.is-success {
+  color: #345ef0;
+  border-color: #345ef0;
+}
+.el-step__title.is-success {
+  color: #4b5869;
+}
+
+.is-wait {
+  .el-step__icon {
+    border: none;
+    background-color: #999eb1;
+    color: #fff;
+  }
+  .el-step__icon.is-text {
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: inherit;
+  }
+}
+.el-step__head.is-wait {
+  color: #999eb1;
+  border-color: #999eb1;
+}
+.el-step__title.is-wait {
+  color: #999eb1;
+}
+.el-step.is-center .el-step__line {
+  left: 63%;
+  right: -37%;
+}
+.el-step.is-horizontal .el-step__line {
+  height: 1px;
+}
+
+//  V-VIEWER的
+.viewer-backdrop {
+  background-color: rgba(0, 0, 0, 0.9);
+  .viewer-footer {
+    .viewer-toolbar {
+      .viewer-prev,
+      .viewer-next {
+        position: fixed;
+        left: 20%;
+        top: 50%;
+        margin-top: -15px;
+        background-color: rgba(255, 255, 255, 0.4);
+      }
+      .viewer-next {
+        left: auto;
+        right: 20%;
+      }
+    }
+    .viewer-navbar {
+      // transform: scale(2);
+      // transform-origin: bottom center;
+      .viewer-list {
+        height: 140px;
+      }
+      .viewer-list > li {
+        height: 140px;
+        width: 80px;
+      }
+    }
+  }
+}
+//工作台面板style
+.worktable_wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  .worktable_panel_title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0c1014;
+    padding: 16px 24px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .main {
+    flex-grow: 1;
+  }
+}
+
+@import "self.scss";
